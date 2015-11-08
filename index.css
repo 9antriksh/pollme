@@ -1,0 +1,90 @@
+body {
+	background-color: #cccccc;
+}
+#navbar{
+	font-family: verdana, cursive;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+#header {
+	position: relative;
+	background-color: #424242;
+	padding: 10px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.navbut{
+	text-decoration: none;
+	border: 1px solid #424242;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	background-color: #cccccc;
+	color: #424242;
+	padding: 3px;
+}
+.navbut:hover{
+	background-color: #424242;
+	color: #cccccc;
+	box-shadow: 5px 5px 4px #888888;
+}
+
+h2{
+	text-align: center;
+	font-family: verdana, cursive;
+	color: #cccccc;
+}
+
+
+#footer{
+	position: relative;
+	clear: both;
+	background-color: #424242;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	padding: 10px;
+	text-align: center;
+	font-family: verdana, cursive;
+	font-size: 10px;
+	color: #cccccc;
+}
+
+#tagtable{
+	font-family: verdana, cursive;
+	position: relative;
+	text-align: center;
+	padding: 10px;
+}
+
+#main{
+	font-family: verdana, cursive;
+	padding-bottom: 20px;
+}
+
+table{
+	margin: auto;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: 1px solid white;
+	border-radius: 5px;
+	background-color: #aaaaaa;
+	box-shadow: 5px 5px 4px #555555;
+}
+
+.button{
+	font-family: verdana, cursive;
+	background-color: #3c4543;
+	border: 1px solid white;
+	color: white;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.button:hover{
+	box-shadow: 5px 5px 4px #888888;
+	border-color: black;
+	color: black;
+	background-color: #cccccc;
+}
