@@ -28,6 +28,8 @@ class login_module{
     //Login Variables
     private $login_status = false;
     public $output = "";
+
+
     
     //Constructor (Initialization point)
     public function __construct(){
@@ -87,6 +89,26 @@ class login_module{
         if(!isset($_POST["signup"])){
             return false;
         }
+        if(empty($_POST['name'])){
+            $this->output = "Username cannot be empty";
+            return false;
+        }
+        elseif(empty($_POST['password'])){
+            $this->output = "Password cannot be empty";
+            return false;
+        }
+        elseif(empty($_POST['check_password'])){
+            $this->output = " Confirm Password cannot be empty";
+            return false;
+        }
+        elseif(empty($_POST['uemail'])){
+            $this->output = "Email cannot be empty";
+            return false;
+        }
+        elseif($_POST['password']!=$_POST['check_password']){
+            $this->output = "Paswords do not match.";
+            return false;
+        }
         return true;   
     }
 
@@ -127,7 +149,6 @@ class login_module{
         if ($this->output) {
             echo '<p style="text-align:center; color:red">' . $this->output . '</p>';
         }
-
     }
 
     //Sign In Page
@@ -195,6 +216,14 @@ class login_module{
     //check login submission
     private function checkLogin(){
         if(!isset($_POST["login"])){
+            return false;
+        }
+        if(empty($_POST['loginName'])){
+            $this->output = "Username cannot be empty.";
+            return false;
+        }
+        if(empty($_POST['loginPassword'])){
+            $this->output = "Password cannot be empty.";
             return false;
         }
         return true; 

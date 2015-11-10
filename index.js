@@ -1,5 +1,4 @@
-function additem()
-            {
+function additem(){
                 var val = document.getElementById("name").value;
                 var tab = document.getElementById("hash").getElementsByTagName("tbody")[0];
                 var row = tab.insertRow(0);
@@ -8,3 +7,4 @@ function additem()
                 cell1.innerHTML = val;
                 cell2.innerHTML = "#pollme"+val;
             }
+
